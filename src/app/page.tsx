@@ -360,9 +360,16 @@ function Pricing() {
     },
     {
       name: "Mantenimiento",
-      price: "$79",
+      price: "$99",
       period: "mensual",
-      features: ["Hosting incluido", "Cambios ilimitados", "Soporte WhatsApp", "Monitoreo 24/7"],
+      features: ["Hosting incluido", "Cambios mensuales", "Soporte por email", "Monitoreo 24/7"],
+      featured: false,
+    },
+    {
+      name: "Mantenimiento Pro",
+      price: "$149",
+      period: "mensual",
+      features: ["Todo lo básico", "Cambios ilimitados", "Soporte WhatsApp prioritario", "Reportes mensuales"],
       featured: false,
     },
   ];
@@ -379,7 +386,7 @@ function Pricing() {
           </div>
         </FadeIn>
 
-        <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
           {plans.map((p, i) => (
             <FadeIn key={p.name} delay={i * 0.1}>
               <div className={`rounded-2xl p-7 h-full flex flex-col ${
