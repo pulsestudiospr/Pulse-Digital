@@ -73,8 +73,10 @@ function Navbar() {
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? "bg-[#0a0a0a]/90 backdrop-blur-xl border-b border-white/5" : "bg-transparent"}`}>
       <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
         <a href="#" className="flex items-center gap-2.5">
-          <div className="w-8 h-8 rounded-xl bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center">
-            <span className="text-white font-bold text-sm" style={{ fontFamily: "var(--font-space)" }}>P</span>
+          <div className="w-8 h-8 rounded-xl bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center overflow-hidden">
+            <svg viewBox="0 0 32 32" className="w-8 h-8">
+              <polyline points="6,16 10,16 13,8 17,24 21,11 24,16 27,16" fill="none" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
+            </svg>
           </div>
           <span className="font-semibold text-lg tracking-tight" style={{ fontFamily: "var(--font-space)" }}>
             Pulse<span className="text-indigo-400">Digital</span> <span className="text-zinc-400 font-normal">Studios</span>
@@ -532,8 +534,10 @@ function Footer() {
     <footer className="border-t border-zinc-800/50 py-8">
       <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
         <div className="flex items-center gap-2">
-          <div className="w-6 h-6 rounded-lg bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center">
-            <span className="text-white font-bold text-[10px]">P</span>
+          <div className="w-6 h-6 rounded-lg bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center overflow-hidden">
+            <svg viewBox="0 0 32 32" className="w-6 h-6">
+              <polyline points="6,16 10,16 13,8 17,24 21,11 24,16 27,16" fill="none" stroke="white" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
+            </svg>
           </div>
           <span className="text-sm text-zinc-500">© {new Date().getFullYear()} Pulse Digital Studios</span>
         </div>

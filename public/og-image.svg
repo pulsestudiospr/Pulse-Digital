@@ -6,11 +6,13 @@
       <stop offset="100%" style="stop-color:#9333ea"/>
     </linearGradient>
   </defs>
-  <rect x="80" y="240" width="64" height="64" rx="16" fill="url(#g)"/>
-  <text x="84" y="284" font-family="system-ui" font-weight="700" font-size="40" fill="white">P</text>
-  <text x="160" y="285" font-family="system-ui" font-weight="600" font-size="42" fill="white">Pulse</text>
-  <text x="310" y="285" font-family="system-ui" font-weight="600" font-size="42" fill="#818cf8">Digital</text>
-  <text x="480" y="285" font-family="system-ui" font-weight="400" font-size="42" fill="#a1a1aa">Studios</text>
-  <text x="80" y="340" font-family="system-ui" font-weight="400" font-size="24" fill="#71717a">Diseño web profesional para negocios locales</text>
-  <text x="80" y="380" font-family="system-ui" font-weight="400" font-size="20" fill="#52525b">San Juan, Puerto Rico 🇵🇷</text>
+  <!-- Logo icon -->
+  <rect x="80" y="240" width="60" height="60" rx="16" fill="url(#g)"/>
+  <polyline points="92,270 98,270 102,254 108,286 114,260 118,270 126,270" fill="none" stroke="white" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Text -->
+  <text x="158" y="282" font-family="system-ui,-apple-system,sans-serif" font-weight="600" font-size="40" fill="white">Pulse</text>
+  <text x="300" y="282" font-family="system-ui,-apple-system,sans-serif" font-weight="600" font-size="40" fill="#818cf8">Digital</text>
+  <text x="462" y="282" font-family="system-ui,-apple-system,sans-serif" font-weight="400" font-size="40" fill="#a1a1aa">Studios</text>
+  <text x="80" y="340" font-family="system-ui,-apple-system,sans-serif" font-weight="400" font-size="22" fill="#71717a">Diseño web profesional para negocios locales</text>
+  <text x="80" y="380" font-family="system-ui,-apple-system,sans-serif" font-weight="400" font-size="18" fill="#52525b">San Juan, Puerto Rico</text>
 </svg>
