@@ -148,7 +148,7 @@ function Hero() {
             <div className="relative rounded-2xl overflow-hidden border border-zinc-800 shadow-2xl">
               <img
                 src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80"
-                alt="Dashboard analytics"
+                alt="Diseño web profesional para negocios en Puerto Rico"
                 className="w-full h-[400px] object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-transparent to-transparent" />
@@ -196,16 +196,19 @@ function Services() {
       img: "https://images.unsplash.com/photo-1547658719-da2b51169166?w=600&q=80",
       title: "Diseño Web",
       desc: "Moderno, rápido, y optimizado para móvil.",
+      alt: "Servicio de diseño web para negocios locales en San Juan PR",
     },
     {
       img: "https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?w=600&q=80",
       title: "SEO & Google",
       desc: "Que tus clientes te encuentren primero.",
+      alt: "Optimización SEO para negocios en Puerto Rico",
     },
     {
       img: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&q=80",
       title: "Mantenimiento",
       desc: "Cambios y soporte cuando lo necesites.",
+      alt: "Mantenimiento y soporte web para negocios puertorriqueños",
     },
   ];
 
@@ -226,7 +229,7 @@ function Services() {
             <FadeIn key={s.title} delay={i * 0.1}>
               <div className="group rounded-2xl overflow-hidden border border-zinc-800 hover:border-zinc-700 transition-all duration-300 bg-[#111]">
                 <div className="h-48 overflow-hidden">
-                  <img src={s.img} alt={s.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                  <img src={s.img} alt={s.alt || s.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                 </div>
                 <div className="p-6">
                   <h3 className="text-lg font-semibold mb-1" style={{ fontFamily: "var(--font-space)" }}>{s.title}</h3>
@@ -249,24 +252,28 @@ function Portfolio() {
       type: "Restaurante",
       img: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600&q=80",
       tags: ["Menú digital", "Reservas"],
+      alt: "Página web para restaurante en Puerto Rico",
     },
     {
       name: "Elite Barber Studio",
       type: "Barbería",
       img: "https://images.unsplash.com/photo-1585747860715-2ba37e788b70?w=600&q=80",
       tags: ["Booking", "Galería"],
+      alt: "Diseño web para barbería en San Juan",
     },
     {
       name: "AutoPro Workshop",
       type: "Taller Mecánico",
       img: "https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?w=600&q=80",
       tags: ["Servicios", "WhatsApp"],
+      alt: "Página web para taller mecánico en Puerto Rico",
     },
     {
       name: "Glow Beauty Salon",
       type: "Salón de Belleza",
       img: "https://images.unsplash.com/photo-1560066984-138dadb4c035?w=600&q=80",
       tags: ["Citas online", "Portfolio"],
+      alt: "Diseño web para salón de belleza en Puerto Rico",
     },
   ];
 
@@ -286,7 +293,7 @@ function Portfolio() {
           {projects.map((p, i) => (
             <FadeIn key={p.name} delay={i * 0.1}>
               <div className="group relative rounded-2xl overflow-hidden h-72 cursor-pointer">
-                <img src={p.img} alt={p.name} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+                <img src={p.img} alt={p.alt || p.name} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
                 <div className="absolute bottom-0 left-0 right-0 p-6">
                   <div className="flex gap-2 mb-2">
@@ -434,7 +441,7 @@ function CtaBanner() {
           <div className="relative rounded-3xl overflow-hidden">
             <img
               src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=1200&q=80"
-              alt="Modern workspace"
+              alt="Oficina moderna de diseño web en Puerto Rico"
               className="w-full h-[400px] object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-r from-[#0a0a0a]/90 to-[#0a0a0a]/40 flex items-center">
