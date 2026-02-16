@@ -77,7 +77,7 @@ function Navbar() {
             <span className="text-white font-bold text-sm" style={{ fontFamily: "var(--font-space)" }}>P</span>
           </div>
           <span className="font-semibold text-lg tracking-tight" style={{ fontFamily: "var(--font-space)" }}>
-            Pulse<span className="text-indigo-400">Digital</span>
+            Pulse<span className="text-indigo-400">Digital</span> <span className="text-zinc-400 font-normal">Studios</span>
           </span>
         </a>
         <div className="hidden md:flex items-center gap-8">
