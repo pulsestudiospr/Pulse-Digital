@@ -13,10 +13,33 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "Pulse Digital Studios | Web Design & Digital Solutions",
+  title: "Pulse Digital Studios | Diseño Web Profesional — Puerto Rico",
   description:
-    "Diseñamos páginas web profesionales para negocios que quieren crecer. Puerto Rico.",
-  keywords: ["web design", "Puerto Rico", "digital agency", "páginas web"],
+    "Páginas web profesionales para negocios locales en Puerto Rico. Restaurantes, barberías, salones, talleres y más. Entrega en 72 horas.",
+  keywords: ["diseño web", "Puerto Rico", "páginas web", "web design", "negocios locales", "San Juan"],
+  metadataBase: new URL("https://pulsedigitalstudios.tech"),
+  openGraph: {
+    title: "Pulse Digital Studios",
+    description: "Diseño web profesional para negocios locales en Puerto Rico.",
+    url: "https://pulsedigitalstudios.tech",
+    siteName: "Pulse Digital Studios",
+    locale: "es_PR",
+    type: "website",
+    images: [{ url: "/og-image.svg", width: 1200, height: 630, alt: "Pulse Digital Studios" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Pulse Digital Studios",
+    description: "Diseño web profesional para negocios locales en Puerto Rico.",
+    images: ["/og-image.svg"],
+  },
+  icons: {
+    icon: "/favicon.svg",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function RootLayout({

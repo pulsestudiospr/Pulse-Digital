@@ -480,11 +480,14 @@ function Contact() {
                 </div>
               </div>
             ) : (
-              <form onSubmit={(e) => { e.preventDefault(); setSent(true); }} className="space-y-4">
-                <input type="text" required placeholder="Nombre" className="w-full px-4 py-3 rounded-xl bg-[#111] border border-zinc-800 focus:border-indigo-500 focus:outline-none text-white placeholder-zinc-600 text-sm" />
-                <input type="text" required placeholder="Negocio" className="w-full px-4 py-3 rounded-xl bg-[#111] border border-zinc-800 focus:border-indigo-500 focus:outline-none text-white placeholder-zinc-600 text-sm" />
-                <input type="text" required placeholder="Email o teléfono" className="w-full px-4 py-3 rounded-xl bg-[#111] border border-zinc-800 focus:border-indigo-500 focus:outline-none text-white placeholder-zinc-600 text-sm" />
-                <textarea rows={3} placeholder="¿Qué necesitas?" className="w-full px-4 py-3 rounded-xl bg-[#111] border border-zinc-800 focus:border-indigo-500 focus:outline-none text-white placeholder-zinc-600 text-sm resize-none" />
+              <form action="https://formsubmit.co/pulsedigitalstudios@gmail.com" method="POST" onSubmit={() => setSent(true)} className="space-y-4">
+                <input type="hidden" name="_subject" value="Nuevo contacto desde pulsedigitalstudios.tech" />
+                <input type="hidden" name="_captcha" value="false" />
+                <input type="hidden" name="_template" value="box" />
+                <input type="text" name="nombre" required placeholder="Nombre" className="w-full px-4 py-3 rounded-xl bg-[#111] border border-zinc-800 focus:border-indigo-500 focus:outline-none text-white placeholder-zinc-600 text-sm" />
+                <input type="text" name="negocio" required placeholder="Negocio" className="w-full px-4 py-3 rounded-xl bg-[#111] border border-zinc-800 focus:border-indigo-500 focus:outline-none text-white placeholder-zinc-600 text-sm" />
+                <input type="text" name="contacto" required placeholder="Email o teléfono" className="w-full px-4 py-3 rounded-xl bg-[#111] border border-zinc-800 focus:border-indigo-500 focus:outline-none text-white placeholder-zinc-600 text-sm" />
+                <textarea rows={3} name="mensaje" placeholder="¿Qué necesitas?" className="w-full px-4 py-3 rounded-xl bg-[#111] border border-zinc-800 focus:border-indigo-500 focus:outline-none text-white placeholder-zinc-600 text-sm resize-none" />
                 <button type="submit" className="w-full py-3 rounded-full bg-indigo-500 hover:bg-indigo-600 font-medium text-sm transition-all">Enviar</button>
               </form>
             )}
@@ -500,11 +503,11 @@ function Contact() {
                 </div>
               </a>
 
-              <a href="https://wa.me/17877000000" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 p-4 rounded-xl bg-[#111] border border-zinc-800 hover:border-green-500/50 transition-all">
+              <a href="https://wa.me/17876074747" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 p-4 rounded-xl bg-[#111] border border-zinc-800 hover:border-green-500/50 transition-all">
                 <div className="w-10 h-10 rounded-xl bg-green-500/10 flex items-center justify-center text-green-400"><IconWhatsApp /></div>
                 <div>
                   <div className="text-sm font-medium">WhatsApp</div>
-                  <div className="text-zinc-500 text-xs">Escríbenos directo</div>
+                  <div className="text-zinc-500 text-xs">(787) 607-4747</div>
                 </div>
               </a>
 
